@@ -1,16 +1,15 @@
-let returnsAnAnonymousFunction = function (){
-    return "A String"
+function returnsAnAnonymousFunction(){
+    return function(){
+
+    }
 }
 function receivesAFunction(callback){
     callback()
 }
-//iInvokeThings(function () { return 4 + 5; });
-var fn 
-fn = returnsANamedFunction(function (){return returnsANamedFunction}) 
-function returnsANamedFunction(something){
-    return something()
+ 
+function returnsANamedFunction(){
+    return function namedFunction(){
+
+    }
 }
 
-//fn = returnsANamedFunction()
-
-//receivesAFunction(aNewFunction)
